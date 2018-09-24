@@ -1,0 +1,15 @@
+{
+	"project": "wplib",
+	"name": "node",
+	"version": "10.10.0",
+	"majorversion": "10.10",
+	"latest": "1",
+	"class": "system",
+	"network": "--network wplibbox",
+	"volumes": "-v /projects/wplib.box/.project/node_modules:/usr/local/lib/node_modules -v {PWD}:/workdir",
+	"ports": "",
+	"restart": "--restart always",
+	"args": "",
+	"env": "NODE_VERSION"
+}
+
