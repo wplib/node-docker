@@ -6,10 +6,12 @@
 	"latest": "1",
 	"class": "system",
 	"network": "--network wplibbox",
-	"volumes": "-v /projects/wplib.box/.project/node_modules:/usr/local/lib/node_modules -v {PWD}:/workdir",
+	"volumes": "-v /projects/wplib.box/.project/node_modules:/usr/local/lib/node_modules -v /projects:/projects",
 	"ports": "",
 	"restart": "--restart always",
 	"args": "",
+	"workdir": "-w {PWD}",
+	"build_args": "--squash",
 	"env": "NODE_VERSION"
 }
 
