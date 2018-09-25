@@ -1,16 +1,16 @@
-![mailhog 1.0.x](https://img.shields.io/badge/mailhog-1.0.x-green.svg)
+![node 10.10.x](https://img.shields.io/badge/node-10.10.x-green.svg)
 
 ![WPLib-Box](https://github.com/wplib/wplib.github.io/raw/master/WPLib-Box-100x.png)
 
 
-# MailHog Docker Container for WPLib Box
-This is the repository for the [MailHog](https://github.com/mailhog/MailHog) Docker container implemented for [WPLib-Box](https://github.com/wplib/wplib-box).
-It currently provides versions 1.0.x
+# Node Docker Container for WPLib Box
+This is the repository for the [Node](https://nodejs.org/en/) Docker container implemented for [WPLib-Box](https://github.com/wplib/wplib-box).
+It currently provides versions 10.10.x
 
 
 ## Supported tags and respective Dockerfiles
 
-`1.0.0`, `1.0`, `latest` _([1.0.0/Dockerfile](https://github.com/wplib/mailhog-docker/blob/master/1.0.0/Dockerfile))_
+`10.10.0`, `10.10`, `latest` _([10.10.0/Dockerfile](https://github.com/wplib/node-docker/blob/master/10.10.0/Dockerfile))_
 
 
 ## Using this container.
@@ -21,35 +21,35 @@ Or you can use the GitHub method to build and run the container.
 ## Using it from Docker Hub
 
 ### Links
-(Docker Hub repo)[https://hub.docker.com/r/wplib/mailhog/]
+(Docker Hub repo)[https://hub.docker.com/r/wplib/node/]
 
-(Docker Cloud repo)[https://cloud.docker.com/swarm/wplib/repository/docker/wplib/mailhog/]
+(Docker Cloud repo)[https://cloud.docker.com/swarm/wplib/repository/docker/wplib/node/]
 
 
 ### Setup from Docker Hub
-A simple `docker pull wplib/mailhog` will pull down the latest version.
+A simple `docker pull wplib/node` will pull down the latest version.
 
 
 ### Runtime from Docker Hub
 start - Spin up a Docker container with the correct runtime configs.
 
-`docker run -d --name wplib_mailhog_1.0.0 --restart=always --network wplibbox -p 8025:8025 -p 1025:1025  wplib/mailhog:1.0.0`
+`docker run -d --name wplib_node --restart=always --network wplibbox wplib/node:10.10.0`
 
 stop - Stop a Docker container.
 
-`docker stop wplib_mailhog_1.0.0`
+`docker stop wplib_node`
 
 run - Run a Docker container in the foreground, (all STDOUT and STDERR will go to console). The Container be removed on termination.
 
-`docker run --rm --name wplib_mailhog_1.0.0 --network wplibbox -p 8025:8025 -p 1025:1025  wplib/mailhog:1.0.0`
+`docker run --rm --name wplib_node --network wplibbox wplib/node:10.10.0`
 
 shell - Run a shell, (/bin/bash), within a Docker container.
 
-`docker run --rm --name wplib_mailhog_1.0.0 -i -t --network wplibbox -p 8025:8025 -p 1025:1025  wplib/mailhog:1.0.0 /bin/bash`
+`docker run --rm --name wplib_node -i -t --network wplibbox wplib/node:10.10.0 /bin/bash`
 
 rm - Remove the Docker container.
 
-`docker container rm wplib_mailhog_1.0.0`
+`docker container rm wplib_node`
 
 
 ## Using it from GitHub repo
@@ -57,7 +57,7 @@ rm - Remove the Docker container.
 ### Setup from GitHub repo
 Simply clone this repository to your local machine
 
-`git clone https://github.com/wplib/mailhog-docker.git`
+`git clone https://github.com/wplib/node-docker.git`
 
 
 ### Building from GitHub repo
